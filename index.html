@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="icon" href="ico/logo.ico">
+	<title>Logowanie</title>
+</head>
+
+<body oncontextmenu="return false;">
+
+	<div class="box wjazd login-box">
+		<form id="form" action="authenticate.php" method="post">
+			<div class="form">
+				<h2 class="zaznaczanie">Logowanie</h2>
+				<br><br><br>
+
+				<div class="inputBox">
+					<input type="text" name="username" required>
+					<span class="zaznaczanie">Nazwa Użytkownika</span>
+					<i></i>
+				</div>
+				<br>
+				<div class="inputBox">
+					<input class="inp" type="password" name="password" required>
+					<span class="zaznaczanie">Hasło</span>
+					<i></i>
+				</div>
+				<input type="submit" style="visibility: hidden;" />
+				<a class="zaznaczanie" onclick="document.getElementById('form').submit()">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Zaloguj
+				</a>
+
+			</div>
+		</form>
+	</div>
+
+	<div class="copyright zaznaczanie">Copyright 2023 - DON. All rights reserved. Design by DON</div>
+	<script src="js/blokada.js"></script>
+</body>
+</html>
